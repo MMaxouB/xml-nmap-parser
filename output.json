@@ -1,1 +1,78 @@
-
+{
+  "hosts": [
+    {
+      "hostname": "router.local",
+      "status": "up",
+      "ipv4": "192.168.0.1",
+      "ipv6": "fe80::1a2b:3c4d:5e6f:0001",
+      "mac": "AA:BB:CC:DD:EE:01",
+      "ports": [
+        {
+          "port": 80,
+          "protocol": "tcp",
+          "service": "http"
+        },
+        {
+          "port": 443,
+          "protocol": "tcp",
+          "service": "https"
+        }
+      ]
+    },
+    {
+      "hostname": "desktop-room",
+      "status": "up",
+      "ipv4": "192.168.0.24",
+      "ipv6": "fe80::abcd:12cd:34ef:5678",
+      "mac": "AA:BB:CC:DD:EE:24",
+      "ports": [
+        {
+          "port": 22,
+          "protocol": "tcp",
+          "service": "ssh"
+        }
+      ]
+    },
+    {
+      "hostname": "smart-tv",
+      "status": "up",
+      "ipv4": "192.168.0.52",
+      "ipv6": "fe80::9f2a:0044:12ab:9980",
+      "mac": "AA:BB:CC:DD:EE:52",
+      "ports": [
+        {
+          "port": 8008,
+          "protocol": "tcp",
+          "service": "chromecast"
+        },
+        {
+          "port": 8009,
+          "protocol": "tcp",
+          "service": "chromecast-ssl"
+        }
+      ]
+    },
+    {
+      "hostname": "unknown",
+      "status": "up",
+      "ipv4": "10.0.0.15",
+      "ipv6": "fe80::bcd1:af22:45ee:1234",
+      "mac": "AA:BB:CC:DD:EE:15",
+      "ports": []
+    },
+    {
+      "hostname": "printer-office",
+      "status": "up",
+      "ipv4": "192.168.0.33",
+      "ipv6": "fe80::2255:aa11:cc33:0044",
+      "mac": "AA:BB:CC:DD:EE:33",
+      "ports": [
+        {
+          "port": 9100,
+          "protocol": "tcp",
+          "service": "jetdirect"
+        }
+      ]
+    }
+  ]
+}
