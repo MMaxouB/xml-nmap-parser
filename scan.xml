@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<nmaprun scanner="nmap" args="nmap -oX scan.xml 192.168.0.0/24" start="1234567890" version="7.95">
+  <scaninfo type="syn" protocol="tcp" numservices="1000" services="1-1000"/>
+
+  <!-- ====== Host 1 : router.local ====== -->
+  <host>
+    <status state="up"/>
+    <address addr="192.168.0.1" addrtype="ipv4"/>
+    <address addr="fe80::1a2b:3c4d:5e6f:0001" addrtype="ipv6"/>
+    <address addr="AA:BB:CC:DD:EE:01" addrtype="mac" vendor="Unknown"/>
+    <hostnames>
+      <hostname name="router.local" type="user"/>
+    </hostnames>
+    <ports>
+      <port protocol="tcp" portid="80">
+        <state state="open"/>
+        <service name="http"/>
+      </port>
+      <port protocol="tcp" portid="443">
+        <state state="open"/>
+        <service name="https"/>
+      </port>
+    </ports>
+  </host>
+
+  <!-- ====== Host 2 : desktop-room ====== -->
+  <host>
+    <status state="up"/>
+    <address addr="192.168.0.24" addrtype="ipv4"/>
+    <address addr="fe80::abcd:12cd:34ef:5678" addrtype="ipv6"/>
+    <address addr="AA:BB:CC:DD:EE:24" addrtype="mac" vendor="Unknown"/>
+    <hostnames>
+      <hostname name="desktop-room" type="user"/>
+    </hostnames>
+    <ports>
+      <port protocol="tcp" portid="22">
+        <state state="open"/>
+        <service name="ssh"/>
+      </port>
+    </ports>
+  </host>
+
+  <!-- ====== Host 3 : smart-tv ====== -->
+  <host>
+    <status state="up"/>
+    <address addr="192.168.0.52" addrtype="ipv4"/>
+    <address addr="fe80::9f2a:0044:12ab:9980" addrtype="ipv6"/>
+    <address addr="AA:BB:CC:DD:EE:52" addrtype="mac" vendor="Unknown"/>
+    <hostnames>
+      <hostname name="smart-tv" type="user"/>
+    </hostnames>
+    <ports>
+      <port protocol="tcp" portid="8008">
+        <state state="open"/>
+        <service name="chromecast"/>
+      </port>
+      <port protocol="tcp" portid="8009">
+        <state state="open"/>
+        <service name="chromecast-ssl"/>
+      </port>
+    </ports>
+  </host>
+
+  <!-- ====== Host 4 : unknown ====== -->
+  <host>
+    <status state="up"/>
+    <address addr="10.0.0.15" addrtype="ipv4"/>
+    <address addr="fe80::bcd1:af22:45ee:1234" addrtype="ipv6"/>
+    <address addr="AA:BB:CC:DD:EE:15" addrtype="mac" vendor="Unknown"/>
+    <hostnames>
+      <hostname name="unknown" type="user"/>
+    </hostnames>
+    <ports>
+      <!-- Aucun port ouvert -->
+    </ports>
+  </host>
+
+  <!-- ====== Host 5 : printer-office ====== -->
+  <host>
+    <status state="up"/>
+    <address addr="192.168.0.33" addrtype="ipv4"/>
+    <address addr="fe80::2255:aa11:cc33:0044" addrtype="ipv6"/>
+    <address addr="AA:BB:CC:DD:EE:33" addrtype="mac" vendor="Unknown"/>
+    <hostnames>
+      <hostname name="printer-office" type="user"/>
+    </hostnames>
+    <ports>
+      <port protocol="tcp" portid="9100">
+        <state state="open"/>
+        <service name="jetdirect"/>
+      </port>
+    </ports>
+  </host>
+
+</nmaprun>
