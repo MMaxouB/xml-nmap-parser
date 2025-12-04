@@ -84,4 +84,4 @@ Aucune dépendance externe.
 Le projet utilise uniquement les modules Python standards.
 
 📄 Licence
-Projet d’apprentissage – libre d'utilisation à but éducatifou d'utilisation
+Projet d’apprentissage – libre d'utilisation à but éducatif ou d'utilisation
